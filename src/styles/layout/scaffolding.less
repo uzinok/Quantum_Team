@@ -1,20 +1,34 @@
 body {
-  margin: 0;
-  padding: 0;
-
-  background-image: url(../../img/1.jpg);
+	min-width: 320px;
+	margin: 0;
+	font-size: 12px;
+	line-height: 150%;
+	font-family: 'IBM Plex Sans', Roboto, Arial, Helvetica, sans-serif;
+	color: @text;
 }
 
 img {
-  max-width: 100%;
+	max-width: 100%;
+	height: auto;
 }
 
 .visually-hidden {
-  position: absolute;
-  width: 0;
-  height: 0;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  border: none;
+	position: absolute;
+	width: 0;
+	height: 0;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	border: none;
+}
+
+[class*="container"] {
+	max-width: 1280px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+[class*="inner"] {
+	padding-right: 16px;
+	padding-left: 16px;
 }

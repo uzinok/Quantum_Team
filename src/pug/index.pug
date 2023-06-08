@@ -5,4 +5,26 @@ html(lang="en")
 		meta(http-equiv="X-UA-Compatible", content="IE=edge")
 		meta(name="viewport", content="width=device-width, initial-scale=1.0")
 		title Quantum Team
+
+		link(rel="stylesheet", href="styles/main.css")
 	body
+
+	header.header
+		.header__container
+			nav.header__nav.nav.header__inner
+				a.nav__logo.logo(href="./", aria-current="page")
+					img(src="./img/logo.svg", alt="Quantum Team", width="118", height="32")
+
+				ul.nav__list
+					li
+						a(href="#about") О нас
+					li
+						a(href="#advantages") Преимущества
+					li
+						a(href="#work") Наша работа
+					li
+						a(href="#jobopenings") Вакансии
+					li
+						a(href="#form") Контакты
+
+				a.nav__button.button(href="#") Присоединиться
