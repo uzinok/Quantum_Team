@@ -1,0 +1,17 @@
+extends templates/template.pug
+
+block variables
+	- var pageTitle = "second page"
+
+block append main
+
+	//- переменная для текущей страницы
+	- var current = "second page"
+
+	h2 second page
+
+	include templates/header.pug
+	main
+		h2 hello
+
+	include templates/footer.pug

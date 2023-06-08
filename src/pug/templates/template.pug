@@ -1,0 +1,27 @@
+block variables
+
+<!DOCTYPE html>
+html(lang="en")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport", content="width=device-width, initial-scale=1.0")
+		meta(http-equiv="X-UA-Compatible", content="ie=edge")
+		title #{pageTitle}
+		link(rel="stylesheet", href="styles/main.min.css")
+
+	body
+
+		//- div(style="display: none")
+		//-   include ../../../resource/svg/sprite.svg
+
+		mixin my_card(title, textButton)
+			.card
+				img(src="https://via.placeholder.com/150/09f.png/00f?text=img")
+				h3
+					| #{title}
+				button #{textButton}
+
+		block main
+
+		//- script(src="js/jquery.min.js")
+		script(src="js/main.js")
