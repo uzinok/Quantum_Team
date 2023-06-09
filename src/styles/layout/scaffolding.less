@@ -1,11 +1,16 @@
 body {
 	min-width: 320px;
 	margin: 0;
+	margin-bottom: 1000px;
 	font-size: 12px;
 	line-height: 150%;
 	font-family: 'IBM Plex Sans', Roboto, Arial, Helvetica, sans-serif;
 	color: @text;
-	margin-bottom: 1000px;
+
+	@media (min-width: @min-md) {
+		font-size: 16px;
+		line-height: 24px;
+	}
 }
 
 img {
