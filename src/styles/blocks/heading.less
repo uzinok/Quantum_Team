@@ -1,0 +1,27 @@
+.heading {
+	& .bg-line {
+		position: relative;
+		z-index: 0;
+		display: inline-block;
+		padding-right: 4px;
+
+		@media (min-width: @min-lg) {
+			padding-right: 7px;
+		}
+
+		&::before {
+			content: '';
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			z-index: -1;
+			width: 100%;
+			height: 8px;
+			background-color: @accent;
+
+			@media (min-width: @min-lg) {
+				height: 12px;
+			}
+		}
+	}
+}

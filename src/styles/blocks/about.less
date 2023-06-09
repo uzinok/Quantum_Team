@@ -1,0 +1,95 @@
+.about {
+	padding-top: 28px;
+	padding-bottom: 79px;
+	background-image: url(../../img/top/bg@md.png);
+	background-repeat: no-repeat;
+	background-position: center;
+
+	@media (min-width: 768px) {
+		padding-top: 80px;
+		padding-bottom: 158px;
+		background-image: url(../../img/top/bg.png);
+	}
+}
+
+.about__container {
+	@media (min-width: @min-md) {
+		&::before {
+			content: '';
+			position: absolute;
+			left: calc(50% + 16px);
+			display: block;
+			width: calc(50% - 32px);
+			max-width: 483px;
+			background: #D9D9D9;
+			background-image: url(../../img/top/about.jpg);
+			background-repeat: no-repeat;
+			border-radius: 16px;
+			aspect-ratio: 483 / 464;
+		}
+	}
+}
+
+.about__inner {
+	@media (max-width: @max-md) {
+		display: grid;
+
+		&::before {
+			content: '';
+			display: block;
+			order: 1;
+			width: 240px;
+			height: 220px;
+			margin-right: auto;
+			margin-bottom: -9px;
+			margin-left: auto;
+			background: #D9D9D9;
+			background-image: url(../../img/top/about@sm.jpg);
+			border-radius: 16px;
+		}
+	}
+
+	@media (min-width: @min-md) {
+		width: 50%;
+	}
+}
+
+.about {
+	& p {
+		margin: 0 0 20px;
+		font-size: 14px;
+		line-height: 20px;
+		letter-spacing: -0.01em;
+
+		@media (min-width: @min-md) {
+			margin-bottom: 50px;
+			font-size: 24px;
+			line-height: 32px;
+		}
+	}
+
+	& h1 {
+		margin: 0 0 20px;
+		font-weight: 400;
+		font-size: 32px;
+		line-height: 24px;
+		letter-spacing: -0.02em;
+
+		@media (min-width: @min-md) {
+			margin-bottom: 47px;
+			font-size: 60px;
+			line-height: 45px;
+		}
+	}
+}
+
+.about__button {
+	@media (max-width: @max-md) {
+		display: block;
+		order: 1;
+		width: 100%;
+		max-width: 360px;
+		margin-right: auto;
+		margin-left: auto;
+	}
+}
