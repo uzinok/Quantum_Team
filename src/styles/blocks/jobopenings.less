@@ -49,6 +49,8 @@
 
 		@media (min-width: @min-md) {
 			margin-bottom: 61px;
+			font-size: 24px;
+			line-height: 32px;
 		}
 	}
 }
@@ -78,6 +80,10 @@
 		margin-bottom: 1em;
 		padding-left: 13px;
 
+		@media (min-width: @min-md) {
+			padding-left: 26px;
+		}
+
 		&::before {
 			content: '';
 			position: absolute;
@@ -91,6 +97,11 @@
 			background-repeat: no-repeat;
 			background-position: center;
 			background-size: contain;
+
+			@media (min-width: @min-md) {
+				width: 16px;
+				height: 16px;
+			}
 		}
 	}
 }
@@ -157,9 +168,9 @@
 	}
 
 	@media (min-width: @min-lg) {
-		padding-left: 35px;
-		padding-right: 35px;
 		min-width: 361px;
+		padding-right: 35px;
+		padding-left: 35px;
 	}
 
 	&:hover {
