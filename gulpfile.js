@@ -201,6 +201,6 @@ exports.html = html;
 // server
 exports.server = server;
 
-exports.build = series(clean, copy, parallel(styles, scripts, html))
+exports.build = series(clean, copy, scripts, parallel(styles, html))
 
-exports.default = series(clean, copy, parallel(scripts, styles, html), server);
+exports.default = series(clean, copy, scripts, parallel(styles, html), server);
