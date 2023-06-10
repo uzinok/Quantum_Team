@@ -127,7 +127,9 @@ html(lang="en")
 								input.form__input(type="tel", placeholder="Телефон")
 							label.form__label
 								span Комментарий
-								textarea.form__input.form__textarea(rows="1", placeholder="Комментарий")
+								textarea.form__input.form__textarea.js-textarea(rows="1", placeholder="Комментарий")
+								.for_textarea
+
 							button.form__button.button.button--primary(type="submit") Отправить
 						.form__social.social
 							ul.social__list
@@ -152,3 +154,5 @@ html(lang="en")
 					p © 2023–2026 Quantum Team™
 					a(href="#") Политика конфиденциальности
 					a(href="#") Правовая информация
+	script
+		include ../../dest/scripts/main.min.js
