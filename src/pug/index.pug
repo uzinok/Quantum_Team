@@ -107,3 +107,39 @@ html(lang="en")
 					.jobopenings__button-wrap
 						p Не нашёл себя в списке вакансий? Quantum Team открыт для единомышленников и партнёров)
 						a.jobopenings__button.button(href="#form") Стать частью команды
+		section#form.form
+			.form__container
+				.form__inner
+					h2.heading
+						span.heading-line Контакты
+					p Quantum Team — главная частица медиабаингового мира с полным спектром инструментов. Мы объединяем лучших и помогаем развиваться каждому.
+					p Хочешь развиваться профессионально и финансово? Напиши нам и присоединяйся!
+					.form__wrap
+						form.form__form(action="#")
+							label.form__label
+								span Имя
+								input.form__input(type="text", placeholder="Имя")
+							label.form__label
+								span Электронная почта
+								input.form__input(type="email", placeholder="Электронная почта")
+							label.form__label
+								span Телефон
+								input.form__input(type="tel", placeholder="Телефон")
+							label.form__label
+								span Комментарий
+								textarea.form__input.form__textarea(rows="1", placeholder="Комментарий")
+							button.form__button.button.button--primary(type="submit") Отправить
+						.form__social.social
+							ul.social__list
+								li
+									a.social__link.social__link--mail(href="#")
+										span.visually-hidden mail
+								li
+									a.social__link.social__link--instagram(href="#")
+										span.visually-hidden instagram
+								li
+									a.social__link.social__link--telegram(href="#")
+										span.visually-hidden telegram
+								li
+									a.social__link.social__link--facebook(href="#")
+										span.visually-hidden facebook
