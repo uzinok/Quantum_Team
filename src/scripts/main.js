@@ -2,13 +2,13 @@ document.addEventListener('DOMContentLoaded', function() {
 
 	// получаем поле ввода и вспомогательный блок
 	let textarea = document.querySelector(".js-textarea");
-	let block = document.querySelector(".for_textarea");
+	let block = document.querySelector(".for-textarea");
 
 	// при нажатии на клавишу
 	textarea.addEventListener("input", function() {
 
 		// получаем значение поля ввода
-		var val_text = textarea.value;
+		let val_text = textarea.value;
 
 		// c помощью регулярных выражений заменм некоторые символы
 		val_text = val_text.replace(/ /g, "&nbsp;");
