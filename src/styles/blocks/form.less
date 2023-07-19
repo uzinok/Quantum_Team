@@ -166,8 +166,7 @@ textarea.form__input {
 @media (min-width: @min-md) {
 	.form__wrap {
 		display: grid;
-		grid-template-columns: repeat(2, auto);
-		grid-template-rows: repeat(2, auto);
+		grid-template-columns: auto 1fr;
 
 		&::after {
 			content: '';
@@ -177,6 +176,7 @@ textarea.form__input {
 			grid-row-start: 1;
 			width: 100%;
 			max-width: 483px;
+			margin-left: auto;
 			background-image: url(../../img/form/form.jpg);
 			background-repeat: no-repeat;
 			background-position: center top;
